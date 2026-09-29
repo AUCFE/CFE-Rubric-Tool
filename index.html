@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rubric Design Tool | CFE at American University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rubric-styles.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-left">
+    <a href="https://edspace.american.edu/cfe/" target="_blank" class="logo-container">
+      <!-- LIGHT LOGO -->
+      <svg class="logo-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 173"><defs><style>.st0{fill:#03519f}.st1{fill:#2a2f70}.st2{fill:#df263d}</style></defs><g><path class="st1" d="M77.55,39.56h-3.34l-.67,1.52h-3.31l5.58-11.68h.15l5.58,11.68h-3.31l-.69-1.52ZM75.1,37.38h1.58c-.27-.67-.69-1.73-.78-2.15h-.03c-.09.42-.5,1.47-.78,2.15Z"/><path class="st1" d="M87.36,35.76v5.31h-3.03v-11.68h.08l5.47,4.74,5.46-4.74h.09v11.68h-3.05v-5.31l-2.5,2.13-2.52-2.13Z"/><path class="st1" d="M99.29,29.55h7.35v2.82h-4.16v1.54h3.57v2.64h-3.57v1.71h4.39v2.82h-7.58v-11.52Z"/><path class="st1" d="M115.8,41.08l-1.62-3.59h-.9v3.59h-3.11v-11.52h4.13c2.7,0,4.6,1.33,4.6,4.05,0,1.63-.73,2.74-1.94,3.35l2.13,4.13h-3.31ZM113.28,32.37v2.46h1.19c.64,0,1.22-.29,1.22-1.23s-.58-1.23-1.22-1.23h-1.19Z"/><path class="st1" d="M125.53,41.08h-3.19v-11.52h3.19v11.52Z"/><path class="st1" d="M134.71,29.31c1.4,0,2.36.34,3.12.75v3.04c-.59-.32-1.52-.74-2.81-.74-1.95,0-2.97,1.42-2.97,2.95s.99,2.95,2.8,2.95c1.39,0,2.41-.4,3.05-.74v3.07c-.76.42-2.03.72-3.35.72-3.29,0-5.7-2.66-5.7-6s2.41-6,5.85-6Z"/><path class="st1" d="M147.53,39.56h-3.34l-.67,1.52h-3.31l5.58-11.68h.15l5.58,11.68h-3.31l-.69-1.52ZM145.08,37.38h1.59c-.27-.67-.69-1.73-.78-2.15h-.03c-.09.42-.5,1.47-.78,2.15Z"/><path class="st1" d="M157.42,35.91v5.17h-3.11v-11.68h.15l6.28,5.33v-5.17h3.12v11.69h-.14l-6.31-5.33Z"/><path class="st1" d="M172.24,29.55h3.19v6.8c0,1.22.56,1.9,1.74,1.9s1.74-.69,1.74-1.9v-6.8h3.2v7.17c0,2.74-1.81,4.59-4.94,4.59s-4.92-1.86-4.92-4.59v-7.17Z"/><path class="st1" d="M189.01,35.91v5.17h-3.11v-11.68h.15l6.28,5.33v-5.17h3.12v11.69h-.14l-6.31-5.33Z"/><path class="st1" d="M202.53,41.08h-3.19v-11.52h3.19v11.52Z"/><path class="st1" d="M213.26,29.55h3.51l-5.73,11.69h-.15l-5.75-11.69h3.52l1.36,3.06c.38.85.78,1.79.93,2.38h.03c.15-.59.55-1.54.93-2.38l1.36-3.06Z"/><path class="st1" d="M219.39,29.55h7.35v2.82h-4.16v1.54h3.57v2.64h-3.57v1.71h4.39v2.82h-7.58v-11.52Z"/><path class="st1" d="M235.91,41.08l-1.62-3.59h-.9v3.59h-3.11v-11.52h4.13c2.7,0,4.6,1.33,4.6,4.05,0,1.63-.73,2.74-1.94,3.35l2.13,4.13h-3.31ZM233.39,32.37v2.46h1.19c.64,0,1.22-.29,1.22-1.23s-.58-1.23-1.22-1.23h-1.19Z"/><path class="st1" d="M250.14,37.81c0,2.19-1.55,3.51-4.42,3.51-1.23,0-2.5-.24-3.35-.62v-3.2c1.02.59,2.24.91,3.19.91s1.48-.18,1.48-.59c0-.48-.72-.7-1.89-1.18-1.77-.72-3.02-1.49-3.02-3.7s1.69-3.62,4.3-3.62c1.1,0,2.23.21,2.99.54v3.07c-.67-.46-1.69-.74-2.71-.74-.9,0-1.45.27-1.45.74,0,.42.67.7,1.78,1.18,1.77.77,3.11,1.55,3.11,3.7Z"/><path class="st1" d="M256.56,41.08h-3.19v-11.52h3.19v11.52Z"/><path class="st1" d="M268.45,29.55v2.82h-2.8v8.71h-3.2v-8.71h-2.8v-2.82h8.81Z"/><path class="st1" d="M274.48,41.08v-4.35l-4.01-7.17h3.63l1.98,3.99,1.98-3.99h3.63l-4.01,7.17v4.35h-3.2Z"/></g><g><path class="st0" d="M49.72,47.99c4.88,0,8.21,1.11,10.86,2.49v10.07c-2.07-1.06-5.3-2.44-9.75-2.44-6.78,0-10.33,4.72-10.33,9.75s3.44,9.75,9.75,9.75c4.82,0,8.37-1.32,10.6-2.44v10.17c-2.65,1.38-7.05,2.38-11.66,2.38-11.45,0-19.82-8.8-19.82-19.87s8.37-19.87,20.35-19.87Z"/><path class="st0" d="M89.84,72.11c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM77.07,67.87c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="st0" d="M120.84,86.94h-10.81v-14.94c0-1.64-.9-2.65-2.23-2.65-2.28,0-3.66,1.7-3.66,4.24v13.35h-10.81v-26.5h9.75l.32,2.38c.11.74-.05,1.22-.21,1.64h.11c1.22-2.49,4.77-4.82,8.21-4.82,5.41,0,9.33,3.39,9.33,10.76v16.53Z"/><path class="st0" d="M123.39,60.45h3.18v-7.95h10.49v7.95h6.09v8.27h-6.09v7.68c0,2.01,1.54,2.54,2.92,2.54,1.64,0,3.13-.58,4.03-1.01v8.64c-1.22.53-3.87,1.17-7.47,1.17-5.35,0-10.12-2.7-10.12-9.96v-9.06h-3.02v-8.27Z"/><path class="st0" d="M172.25,72.11c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM159.48,67.87c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="st0" d="M175.75,60.45h9.75l.42,3.02c1.59-1.96,4.45-3.82,7.47-3.82.9,0,1.75.11,1.75.11v10.55s-.79-.42-2.07-.42c-2.97,0-6.52,1.54-6.52,6.04v11.02h-10.81v-26.5Z"/><path class="st0" d="M209.46,60.45h3.44v-1.8c0-6.52,4.08-10.65,12.24-10.65,1.8,0,3.29.21,3.82.32v9.01c-.48-.16-1.38-.37-2.7-.37-2.12,0-3.5,1.01-3.5,3.02v.48h5.41v8.27h-4.88v18.23h-10.81v-18.23h-3.02v-8.27Z"/><path class="st0" d="M229.76,73.7c0-8.06,6.09-14.04,14.57-14.04s14.57,5.99,14.57,14.04-6.09,14.04-14.57,14.04-14.57-5.99-14.57-14.04ZM239.83,73.7c0,3.18,2.07,5.14,4.5,5.14s4.5-1.96,4.5-5.14-2.07-5.14-4.5-5.14-4.5,1.96-4.5,5.14Z"/><path class="st0" d="M262.35,60.45h9.75l.42,3.02c1.59-1.96,4.45-3.82,7.47-3.82.9,0,1.75.11,1.75.11v10.55s-.79-.42-2.07-.42c-2.97,0-6.52,1.54-6.52,6.04v11.02h-10.81v-26.5Z"/></g><g><path class="st2" d="M81.19,92.77h24.22v9.33h-13.14v5.67h11.08v9.06h-11.08v14.1h-11.08v-38.16Z"/><path class="st2" d="M107.69,105.27c1.48-.64,5.14-1.64,10.12-1.64,8.8,0,13.3,4.13,13.3,10.76v16.53h-9.7l-.21-1.75c-.11-.95.05-1.59.05-1.59h-.11c-1.06,2.38-3.44,4.13-7.31,4.13-4.19,0-8.43-2.38-8.43-8.21,0-6.52,6.89-9.65,14.94-8.48v-.05c0-1.8-1.59-2.49-4.45-2.49-3.02,0-6.25,1.01-8.21,2.28v-9.49ZM120.09,119.79c-3.39-.53-4.77.79-4.77,2.23,0,1.11.74,1.7,1.75,1.7,1.75,0,3.02-1.27,3.02-3.92Z"/><path class="st2" d="M149.98,122.39c2.76,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.94-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="st2" d="M159.47,104.43h10.81v14.94c0,1.64.9,2.65,2.23,2.65,2.28,0,3.66-1.7,3.66-4.24v-13.35h10.81v26.5h-9.75l-.32-2.38c-.11-.74.05-1.22.21-1.64h-.11c-1.22,2.49-4.77,4.82-8.21,4.82-5.41,0-9.33-3.39-9.33-10.76v-16.53Z"/><path class="st2" d="M208.07,130.71c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54,1.11,0,2.28-.42,2.97-.74v8.8Z"/><path class="st2" d="M207.7,104.43h3.18v-7.95h10.49v7.95h6.09v8.27h-6.09v7.68c0,2.01,1.54,2.54,2.92,2.54,1.64,0,3.13-.58,4.03-1.01v8.64c-1.22.53-3.87,1.17-7.47,1.17-5.35,0-10.12-2.7-10.12-9.96v-9.06h-3.02v-8.27Z"/><path class="st2" d="M230.6,132.99c.42.21,1.75.69,3.44.69,2.7,0,4.29-1.11,5.09-2.44l-10.7-26.82h11.71l2.49,8.85c.74,2.65,1.43,5.41,1.85,8.16h.11c.37-2.75,1.06-5.51,1.8-8.16l2.49-8.85h11.66l-10.12,27.29c-3.07,8.32-8.43,11.66-14.68,11.66-2.91,0-4.5-.42-5.14-.69v-9.7Z"/><path class="st0" d="M276.55,92.77h25.54v9.33h-14.47v5.09h12.4v8.74h-12.4v5.67h15.26v9.33h-26.34v-38.16Z"/><path class="st0" d="M321.76,104.43h12.24l-8.48,12.67,8.85,13.83h-11.71l-3.76-6.15-3.66,6.15h-11.82l8.58-12.77-8.48-13.73h11.98l3.02,6.57,3.23-6.57Z"/><path class="st0" d="M350.06,122.39c2.76,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.94-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="st0" d="M384.83,116.09c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM372.05,111.85c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="st0" d="M404.07,130.71c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54,1.11,0,2.28-.42,2.97-.74v8.8Z"/><path class="st0" d="M422.46,130.71c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54,1.11,0,2.28-.42,2.97-.74v8.8Z"/><path class="st0" d="M450.33,116.09c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM437.56,111.85c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="st0" d="M481.34,130.92h-10.81v-14.94c0-1.64-.9-2.65-2.23-2.65-2.28,0-3.66,1.7-3.66,4.24v13.35h-10.81v-26.5h9.75l.32,2.38c.11.74-.05,1.22-.21,1.64h.11c1.22-2.49,4.77-4.82,8.21-4.82,5.41,0,9.33,3.39,9.33,10.76v16.53Z"/><path class="st0" d="M500.74,122.39c2.76,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.94-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="st0" d="M535.5,116.09c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM522.73,111.85c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/></g><path class="st0" d="M59.75,120.39s3.13,4.44,8.89,2.6c0,0,5.86-1.37,5.55-7.93,0,0-3.82,2.33-6.88,3.42-3.24,1.16-7.57,1.9-7.57,1.9Z"/><path class="st0" d="M72.74,90.8l.3,1.25-1.01.79c-.22.17-5.48,4.25-11.49,6.56-6.2,2.39-13.4,2.88-13.71,2.9l-1.3.09-.6-1.15c-2.61-4.98-6.32-6.54-9.92-8.06-.87-.37-1.78-.75-2.65-1.17-5.45-2.66-9.66-7.42-12.16-13.78-1.89-4.81-2.76-10.59-2.32-15.45.85-9.43,6.13-17,15.7-22.51,2.02-1.16,4.6-2.14,7.07-2.7,7.29-1.62,17.84-1.78,26.66,6.7,2.51,2.41,5.18,5.39,7.79,12.74-1.38.15-2.69.46-3.92.91-2.27-6.21-4.44-8.65-6.64-10.76-7.55-7.26-16.68-7.1-23.02-5.68-2.06.46-4.29,1.3-5.94,2.26-8.49,4.89-12.98,11.23-13.72,19.4-.67,7.43,2.04,20.3,12.25,25.27.77.38,1.59.72,2.46,1.09,3.59,1.51,8,3.37,11.24,8.7,2.23-.24,7.1-.91,11.29-2.53,4.01-1.54,7.75-4.03,9.47-5.26-.16-.91-.42-2.29-.47-3.16,1.29.79,2.74,1.42,4.31,1.86.08.55.19,1.12.33,1.69Z"/><path class="st1" d="M73.89,97.26c-1.17,3.48-8.82,6.67-12.25,7.9-1.75.63-10.46,3.63-13.64,1.75-.49-.29-1.02-1.21-.31-2.3.95-1.44,4.8-.25,12.94-3.36h.01c8.18-2.99,10.31-6.42,11.98-5.95,1.25.35,1.45,1.4,1.27,1.95Z"/><path class="st1" d="M75.1,103.45c-.91,3.41-9.44,6.58-11.02,7.19h-.01c-1.61.57-10.14,3.72-13.04,1.73-.43-.29-.93-1.07-.29-2.03.86-1.27,4.61-.67,11.96-3.41h0s.01,0,.01,0h0c7.36-2.72,9.81-5.63,11.3-5.22,1.11.31,1.24,1.24,1.1,1.73Z"/><path class="st1" d="M76.43,109.43c-.74,3.34-8.53,6.24-9.97,6.8h-.01c-1.47.52-9.26,3.39-12,1.34-.4-.29-.89-1.08-.33-2.02.76-1.24,4.24-.53,10.95-3.03h0s.01,0,.01,0h0c6.72-2.49,8.9-5.29,10.29-4.85,1.04.34,1.18,1.26,1.07,1.75Z"/></svg>
+      <!-- DARK LOGO -->
+      <svg class="logo-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556 173"><defs><style>.dm{fill:#fff}</style></defs><g><path class="dm" d="M79.38,38.11h-3.34l-.67,1.52h-3.31l5.58-11.68h.15l5.58,11.68h-3.31l-.69-1.52ZM76.92,35.94h1.58c-.27-.67-.69-1.73-.78-2.15h-.03c-.09.42-.5,1.47-.78,2.15Z"/><path class="dm" d="M89.19,34.32v5.31h-3.03v-11.68h.08l5.47,4.74,5.46-4.74h.09v11.68h-3.05v-5.31l-2.5,2.13-2.52-2.13Z"/><path class="dm" d="M101.11,28.11h7.35v2.82h-4.16v1.54h3.57v2.64h-3.57v1.71h4.39v2.82h-7.58v-11.52Z"/><path class="dm" d="M117.63,39.63l-1.62-3.59h-.9v3.59h-3.11v-11.52h4.13c2.7,0,4.6,1.33,4.6,4.05,0,1.63-.73,2.74-1.94,3.35l2.13,4.13h-3.31ZM115.11,30.93v2.46h1.19c.64,0,1.22-.29,1.22-1.23s-.58-1.23-1.22-1.23h-1.19Z"/><path class="dm" d="M127.36,39.63h-3.19v-11.52h3.19v11.52Z"/><path class="dm" d="M136.54,27.87c1.4,0,2.36.34,3.12.75v3.04c-.59-.32-1.52-.74-2.8-.74-1.95,0-2.97,1.42-2.97,2.95s.99,2.95,2.8,2.95c1.39,0,2.41-.4,3.05-.74v3.07c-.76.42-2.03.72-3.35.72-3.29,0-5.7-2.66-5.7-6s2.41-6,5.85-6Z"/><path class="dm" d="M149.36,38.11h-3.34l-.67,1.52h-3.31l5.58-11.68h.15l5.58,11.68h-3.31l-.69-1.52ZM146.91,35.94h1.59c-.27-.67-.69-1.73-.78-2.15h-.03c-.09.42-.5,1.47-.78,2.15Z"/><path class="dm" d="M159.24,34.46v5.17h-3.11v-11.68h.15l6.28,5.33v-5.17h3.12v11.69h-.14l-6.31-5.33Z"/><path class="dm" d="M174.07,28.11h3.19v6.8c0,1.22.56,1.9,1.74,1.9s1.74-.69,1.74-1.9v-6.8h3.2v7.17c0,2.74-1.81,4.59-4.94,4.59s-4.92-1.86-4.92-4.59v-7.17Z"/><path class="dm" d="M190.84,34.46v5.17h-3.11v-11.68h.15l6.28,5.33v-5.17h3.12v11.69h-.14l-6.31-5.33Z"/><path class="dm" d="M204.35,39.63h-3.19v-11.52h3.19v11.52Z"/><path class="dm" d="M215.09,28.11h3.51l-5.73,11.69h-.15l-5.75-11.69h3.52l1.36,3.06c.38.85.78,1.79.93,2.38h.03c.15-.59.55-1.54.93-2.38l1.36-3.06Z"/><path class="dm" d="M221.22,28.11h7.35v2.82h-4.16v1.54h3.57v2.64h-3.57v1.71h4.39v2.82h-7.58v-11.52Z"/><path class="dm" d="M237.73,39.63l-1.62-3.59h-.9v3.59h-3.11v-11.52h4.13c2.7,0,4.6,1.33,4.6,4.05,0,1.63-.73,2.74-1.94,3.35l2.13,4.13h-3.31ZM235.22,30.93v2.46h1.19c.64,0,1.22-.29,1.22-1.23s-.58-1.23-1.22-1.23h-1.19Z"/><path class="dm" d="M251.96,36.37c0,2.19-1.55,3.51-4.42,3.51-1.23,0-2.5-.24-3.35-.62v-3.2c1.02.59,2.24.91,3.19.91s1.48-.18,1.48-.59c0-.48-.72-.7-1.89-1.18-1.77-.72-3.02-1.49-3.02-3.7s1.69-3.62,4.3-3.62c1.1,0,2.23.21,2.99.54v3.07c-.67-.46-1.69-.74-2.71-.74-.9,0-1.45.27-1.45.74,0,.42.67.7,1.78,1.18,1.77.77,3.11,1.55,3.11,3.7Z"/><path class="dm" d="M258.38,39.63h-3.19v-11.52h3.19v11.52Z"/><path class="dm" d="M270.28,28.11v2.82h-2.8v8.71h-3.2v-8.71h-2.8v-2.82h8.81Z"/><path class="dm" d="M276.3,39.63v-4.35l-4.01-7.17h3.63l1.98,3.99,1.98-3.99h3.63l-4.01,7.17v4.35h-3.2Z"/></g><g><path class="dm" d="M51.55,46.55c4.88,0,8.21,1.11,10.86,2.49v10.07c-2.07-1.06-5.3-2.44-9.75-2.44-6.78,0-10.33,4.72-10.33,9.75s3.45,9.75,9.75,9.75c4.82,0,8.37-1.32,10.6-2.44v10.17c-2.65,1.38-7.05,2.38-11.66,2.38-11.45,0-19.82-8.8-19.82-19.87s8.37-19.87,20.35-19.87Z"/><path class="dm" d="M91.67,70.67c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.05-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM78.89,66.43c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="dm" d="M122.67,85.5h-10.81v-14.94c0-1.64-.9-2.65-2.23-2.65-2.28,0-3.66,1.7-3.66,4.24v13.35h-10.81v-26.5h9.75l.32,2.38c.11.74-.05,1.22-.21,1.64h.11c1.22-2.49,4.77-4.82,8.21-4.82,5.41,0,9.33,3.39,9.33,10.76v16.53Z"/><path class="dm" d="M125.22,59.01h3.18v-7.95h10.49v7.95h6.09v8.27h-6.09v7.68c0,2.01,1.54,2.54,2.92,2.54,1.64,0,3.13-.58,4.03-1.01v8.64c-1.22.53-3.87,1.17-7.47,1.17-5.35,0-10.12-2.7-10.12-9.96v-9.06h-3.02v-8.27Z"/><path class="dm" d="M174.08,70.67c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.05-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM161.31,66.43c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="dm" d="M177.58,59.01h9.75l.42,3.02c1.59-1.96,4.45-3.82,7.47-3.82.9,0,1.75.11,1.75.11v10.55s-.79-.42-2.07-.42c-2.97,0-6.52,1.54-6.52,6.04v11.02h-10.81v-26.5Z"/><path class="dm" d="M211.29,59.01h3.44v-1.8c0-6.52,4.08-10.65,12.24-10.65,1.8,0,3.29.21,3.82.32v9.01c-.48-.16-1.38-.37-2.7-.37-2.12,0-3.5,1.01-3.5,3.02v.48h5.41v8.27h-4.88v18.23h-10.81v-18.23h-3.02v-8.27Z"/><path class="dm" d="M231.59,72.26c0-8.06,6.09-14.04,14.57-14.04s14.57,5.99,14.57,14.04-6.09,14.04-14.57,14.04-14.57-5.99-14.57-14.04ZM241.66,72.26c0,3.18,2.07,5.14,4.5,5.14s4.5-1.96,4.5-5.14-2.07-5.14-4.5-5.14-4.5,1.96-4.5,5.14Z"/><path class="dm" d="M264.18,59.01h9.75l.42,3.02c1.59-1.96,4.45-3.82,7.47-3.82.9,0,1.75.11,1.75.11v10.55s-.79-.42-2.07-.42c-2.97,0-6.52,1.54-6.52,6.04v11.02h-10.81v-26.5Z"/></g><g><path class="dm" d="M83.02,91.33h24.22v9.33h-13.14v5.67h11.08v9.06h-11.08v14.1h-11.08v-38.16Z"/><path class="dm" d="M109.52,103.83c1.48-.64,5.14-1.64,10.12-1.64,8.8,0,13.3,4.13,13.3,10.76v16.53h-9.7l-.21-1.75c-.11-.95.05-1.59.05-1.59h-.11c-1.06,2.38-3.44,4.13-7.31,4.13-4.19,0-8.43-2.38-8.43-8.21,0-6.52,6.89-9.65,14.94-8.48v-.05c0-1.8-1.59-2.49-4.45-2.49-3.02,0-6.25,1.01-8.21,2.28v-9.49ZM121.92,118.35c-3.39-.53-4.77.79-4.77,2.23,0,1.11.74,1.7,1.75,1.7,1.75,0,3.02-1.27,3.02-3.92Z"/><path class="dm" d="M151.81,120.95c2.75,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.93-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="dm" d="M161.3,102.99h10.81v14.94c0,1.64.9,2.65,2.23,2.65,2.28,0,3.66-1.7,3.66-4.24v-13.35h10.81v26.5h-9.75l-.32-2.38c-.11-.74.05-1.22.21-1.64h-.11c-1.22,2.49-4.77,4.82-8.21,4.82-5.41,0-9.33-3.39-9.33-10.76v-16.53Z"/><path class="dm" d="M209.9,129.27c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54s2.28-.42,2.97-.74v8.8Z"/><path class="dm" d="M209.53,102.99h3.18v-7.95h10.49v7.95h6.09v8.27h-6.09v7.68c0,2.01,1.54,2.54,2.92,2.54,1.64,0,3.13-.58,4.03-1.01v8.64c-1.22.53-3.87,1.17-7.47,1.17-5.35,0-10.12-2.7-10.12-9.96v-9.06h-3.02v-8.27Z"/><path class="dm" d="M232.43,131.55c.42.21,1.75.69,3.44.69,2.7,0,4.29-1.11,5.09-2.44l-10.7-26.82h11.71l2.49,8.85c.74,2.65,1.43,5.41,1.85,8.16h.11c.37-2.75,1.06-5.51,1.8-8.16l2.49-8.85h11.66l-10.12,27.29c-3.07,8.32-8.43,11.66-14.68,11.66-2.91,0-4.5-.42-5.14-.69v-9.7Z"/><path class="dm" d="M278.38,91.33h25.54v9.33h-14.47v5.09h12.4v8.74h-12.4v5.67h15.26v9.33h-26.34v-38.16Z"/><path class="dm" d="M323.58,102.99h12.24l-8.48,12.67,8.85,13.83h-11.71l-3.76-6.15-3.66,6.15h-11.82l8.58-12.77-8.48-13.73h11.98l3.02,6.57,3.23-6.57Z"/><path class="dm" d="M351.89,120.95c2.75,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.93-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="dm" d="M386.65,114.64c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM373.88,110.4c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="dm" d="M405.89,129.27c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54s2.28-.42,2.97-.74v8.8Z"/><path class="dm" d="M424.28,129.27c-1.01.48-3.39,1.01-6.46,1.01-5.09,0-9.54-2.44-9.54-9.17v-29.78h10.81v27.34c0,2.07,1.17,2.54,2.23,2.54,1.11,0,2.28-.42,2.97-.74v8.8Z"/><path class="dm" d="M452.16,114.64c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM439.39,110.4c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/><path class="dm" d="M483.17,129.48h-10.81v-14.94c0-1.64-.9-2.65-2.23-2.65-2.28,0-3.66,1.7-3.66,4.24v13.35h-10.81v-26.5h9.75l.32,2.38c.11.74-.05,1.22-.21,1.64h.11c1.22-2.49,4.77-4.82,8.21-4.82,5.41,0,9.33,3.39,9.33,10.76v16.53Z"/><path class="dm" d="M502.56,120.95c2.76,0,5.67-1.64,6.09-2.07v9.59c-.53.26-3.5,1.8-7.95,1.8-8.74,0-14.36-5.99-14.36-14.04s5.62-14.04,14.36-14.04c4.45,0,7.26,1.48,7.79,1.75v9.64c-1.11-1.01-3.82-2.07-5.94-2.07-3.07,0-5.35,1.7-5.35,4.72s2.12,4.72,5.35,4.72Z"/><path class="dm" d="M537.33,114.64c0,1.7-.21,3.29-.32,3.76h-15.1c.48,2.07,2.49,2.92,5.51,2.92,3.92,0,8.06-1.17,8.8-1.43v8.9c-1.27.53-4.82,1.48-9.86,1.48-9.86,0-15.63-5.99-15.63-14.04s6.04-14.04,13.94-14.04c8.53,0,12.67,5.83,12.67,12.45ZM524.56,110.4c-1.85,0-2.76,1.43-2.76,3.39h5.41c.11-1.96-.79-3.39-2.65-3.39Z"/></g><path class="dm" d="M61.58,118.94s3.13,4.44,8.89,2.6c0,0,5.86-1.37,5.55-7.93,0,0-3.82,2.33-6.88,3.42-3.24,1.16-7.57,1.9-7.57,1.9Z"/><path class="dm" d="M74.57,89.36l.3,1.25-1.01.79c-.22.17-5.48,4.25-11.49,6.56-6.2,2.39-13.4,2.88-13.71,2.9l-1.3.09-.6-1.15c-2.61-4.98-6.32-6.54-9.92-8.06-.87-.37-1.78-.75-2.65-1.17-5.45-2.66-9.66-7.42-12.16-13.78-1.89-4.81-2.76-10.59-2.32-15.45.85-9.43,6.13-17,15.7-22.51,2.02-1.16,4.6-2.14,7.07-2.7,7.29-1.62,17.84-1.78,26.66,6.7,2.51,2.41,5.18,5.39,7.79,12.74-1.38.15-2.69.46-3.92.91-2.27-6.21-4.44-8.65-6.64-10.76-7.55-7.26-16.68-7.1-23.02-5.68-2.06.46-4.29,1.3-5.94,2.26-8.49,4.89-12.98,11.23-13.72,19.4-.67,7.43,2.04,20.3,12.25,25.27.77.38,1.59.72,2.46,1.09,3.59,1.51,8,3.37,11.24,8.7,2.23-.24,7.1-.91,11.29-2.53,4.01-1.54,7.75-4.03,9.47-5.26-.16-.91-.42-2.29-.47-3.16,1.29.79,2.74,1.42,4.31,1.86.08.55.19,1.12.33,1.69Z"/><path class="dm" d="M75.72,95.82c-1.17,3.48-8.82,6.67-12.25,7.9-1.75.63-10.46,3.63-13.64,1.75-.49-.29-1.02-1.21-.31-2.3.95-1.44,4.8-.25,12.94-3.36h.01c8.18-2.99,10.31-6.42,11.98-5.95,1.25.35,1.45,1.4,1.27,1.95Z"/><path class="dm" d="M76.93,102.01c-.91,3.41-9.44,6.58-11.02,7.19h-.01c-1.61.57-10.14,3.72-13.04,1.73-.43-.29-.93-1.07-.29-2.03.86-1.27,4.61-.67,11.96-3.41h0s.01,0,.01,0h0c7.36-2.72,9.81-5.63,11.3-5.22,1.11.31,1.24,1.24,1.1,1.73Z"/><path class="dm" d="M78.26,107.99c-.74,3.34-8.53,6.24-9.97,6.8h-.01c-1.47.52-9.26,3.39-12,1.34-.4-.29-.89-1.08-.33-2.02.76-1.24,4.24-.53,10.95-3.03h0s.01,0,.01,0h0c6.72-2.49,8.9-5.29,10.29-4.85,1.04.34,1.18,1.26,1.07,1.75Z"/></svg>
+    </a>
+    <div class="header-divider"></div>
+    <div>
+      <div class="header-title">Rubric Design Tool</div>
+      <div class="header-sub">Center for Faculty Excellence · American University</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+      <span id="themeIcon">🌙</span>
+      <span id="themeLabel">Dark Mode</span>
+    </button>
+  </div>
+</header>
+
+<!-- ══ APP LAYOUT ══════════════════════════════════════════════ -->
+<div class="app-layout">
+
+  <!-- ── SIDEBAR ── -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-nav">
+      <span class="nav-group-label">Workshop Steps</span>
+
+      <div class="nav-item active" data-page="welcome" onclick="showPage('welcome')">
+        <span class="nav-num">00</span>
+        Welcome
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step1" onclick="showPage('step1')">
+        <span class="nav-num">01</span>
+        Assignment Context
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step2" onclick="showPage('step2')">
+        <span class="nav-num">02</span>
+        Assignment Prompt
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step3" onclick="showPage('step3')">
+        <span class="nav-num">03</span>
+        What Does Success Look Like?
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step4" onclick="showPage('step4')">
+        <span class="nav-num">04</span>
+        What Goes Wrong?
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step5" onclick="showPage('step5')">
+        <span class="nav-num">05</span>
+        Your Criteria
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step6" onclick="showPage('step6')">
+        <span class="nav-num">06</span>
+        Scoring Approach
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step7" onclick="showPage('step7')">
+        <span class="nav-num">07</span>
+        Performance Levels
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step8" onclick="showPage('step8')">
+        <span class="nav-num">08</span>
+        Write Your Descriptors
+        <span class="nav-check">✓</span>
+      </div>
+      <div class="nav-item disabled" data-page="step9" onclick="showPage('step9')">
+        <span class="nav-num">09</span>
+        Preview &amp; Export
+        <span class="nav-check">✓</span>
+      </div>
+    </div>
+
+    <!-- Progress -->
+    <div class="sidebar-progress-wrap">
+      <span class="sidebar-progress-label">Progress</span>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+      </div>
+      <div class="progress-pct" id="progressPct">0%</div>
+    </div>
+
+    <!-- Save / Load -->
+    <div class="sidebar-footer">
+      <button class="sidebar-save-btn" onclick="saveProgress()">⬇ Save Progress</button>
+      <label class="sidebar-load-label">
+        ↑ Load Progress
+        <input type="file" accept=".json" style="display:none" onchange="loadProgress(event)">
+      </label>
+    </div>
+  </nav>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="main-content">
+
+    <!-- ══ PAGE: WELCOME ══ -->
+    <div class="page active" id="page-welcome">
+      <div class="welcome-hero">
+        <span class="welcome-eyebrow">Center for Faculty Excellence · American University</span>
+        <h1 class="welcome-title">Build a <span>Better Rubric</span></h1>
+        <p class="welcome-desc">This tool guides you through a research-backed rubric design process — the same thinking a CFE workshop would walk you through. You'll reflect on your assignment, articulate what success looks like, and build criteria and descriptors that are clear, fair, and genuinely useful to your students.</p>
+        <div class="welcome-btns">
+          <button class="nav-btn nav-btn-primary" onclick="startTool()">Start Building →</button>
+        </div>
+      </div>
+
+      <div class="welcome-cards">
+        <div class="welcome-card">
+          <div class="welcome-card-icon">🎯</div>
+          <div class="welcome-card-title">Guided Thinking</div>
+          <div class="welcome-card-desc">Eight workshop-style steps that surface what you actually value in student work — before you write a single descriptor.</div>
+        </div>
+        <div class="welcome-card">
+          <div class="welcome-card-icon">📐</div>
+          <div class="welcome-card-title">Best Practices Built In</div>
+          <div class="welcome-card-desc">Research-backed nudges at every step — on criteria language, performance levels, descriptor specificity, and more.</div>
+        </div>
+        <div class="welcome-card">
+          <div class="welcome-card-icon">📋</div>
+          <div class="welcome-card-title">Ready to Use</div>
+          <div class="welcome-card-desc">Your completed rubric is formatted and ready to copy, print, or share with students before the assignment is due.</div>
+        </div>
+      </div>
+
+      <div class="save-info-box">
+        <h3>Saving Your Work</h3>
+        <p>This tool does not save automatically. Use the <strong>Save Progress</strong> button in the sidebar at any time to download a file you can reload later. Your rubric is yours — nothing is stored on any server.</p>
+        <p>If you are coming back to a saved session, click <strong>Load Progress</strong> to pick up where you left off.</p>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 1 — ASSIGNMENT CONTEXT ══ -->
+    <div class="page" id="page-step1">
+      <div class="print-header">
+        <div class="print-header-title">Rubric Design Tool — Center for Faculty Excellence, American University</div>
+        <div class="print-header-meta" id="printMeta"></div>
+      </div>
+      <span class="page-eyebrow">Step 01</span>
+      <h1 class="page-title">Assignment Context</h1>
+      <p class="page-intro">Tell us about your course and assignment. This context shapes everything downstream — the criteria we suggest, the language we use, and the best-practice guidance we surface along the way.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Your Course</span>
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="schoolSelect">AU School</label>
+            <select class="form-select" id="schoolSelect" onchange="onSchoolChange()">
+              <option value="">Select a school…</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="programSelect">Program / Department</label>
+            <select class="form-select" id="programSelect" disabled>
+              <option value="">Select a school first…</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="courseLevel">Course Level</label>
+            <select class="form-select" id="courseLevel">
+              <option value="">Select…</option>
+              <option value="intro-ug">Lower-division undergraduate</option>
+              <option value="upper-ug">Upper-division undergraduate</option>
+              <option value="masters">Master's level</option>
+              <option value="phd">Doctoral</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="assignmentName">Assignment Name</label>
+            <input type="text" class="form-input" id="assignmentName" placeholder="e.g. Policy Analysis Paper">
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Assignment Type</span>
+        <p class="step-body">Select the type that best describes this assignment. Assignment type shapes which criteria the tool suggests — a lab report and a policy brief call for very different rubric dimensions.</p>
+        <div class="type-grid" id="typeGrid">
+          <!-- Populated by JS -->
+        </div>
+        <div class="custom-type-wrap" id="customTypeWrap">
+          <div class="form-group">
+            <label class="form-label" for="customTypeName">Describe your assignment type</label>
+            <input type="text" class="form-input" id="customTypeName" placeholder="e.g. Clinical case presentation, Business plan pitch…">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="customTypeMatch">Which standard type does it most resemble?</label>
+            <p class="form-hint">This helps us suggest relevant criteria even for custom assignment types.</p>
+            <select class="form-select" id="customTypeMatch">
+              <option value="">Select the closest match…</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <div></div>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep1()">Next: Assignment Prompt →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 2 — ASSIGNMENT PROMPT ══ -->
+    <div class="page" id="page-step2">
+      <span class="page-eyebrow">Step 02</span>
+      <h1 class="page-title">Your Assignment Prompt</h1>
+      <p class="page-intro">Paste the directions you give students. A rubric is only as good as the assignment it assesses — so before we build criteria, we want to make sure your prompt is giving students what they need to succeed.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Paste Your Assignment Directions</span>
+        <p class="step-body">Include everything students see: the task description, any requirements (length, format, sources), and the purpose or audience if stated. The more complete this is, the better the tool can reflect your own language back to you in the rubric.</p>
+        <div class="form-group">
+          <textarea class="form-textarea" id="assignmentPrompt" style="min-height:160px;"
+            placeholder="Paste your assignment prompt or directions here…"
+            oninput="analyzePrompt()"></textarea>
+        </div>
+        <div id="promptChecklist" style="margin-top:1rem;"></div>
+        <div class="prompt-alert" id="promptAlert">
+          <div class="prompt-alert-title">⚠ Your prompt may need some work before building a rubric</div>
+          <p>A rubric can only be as clear as the assignment it assesses. If students don't fully understand what they're being asked to do, even a well-designed rubric won't close that gap. Consider revisiting your assignment directions before continuing — or reach out to the CFE for a consultation.</p>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">AI Usage Policy</span>
+        <p class="step-body">Does your assignment include a clear statement about how students may or may not use AI tools? This is now considered a best practice for all assignments, regardless of discipline or level.</p>
+        <div class="form-group">
+          <label class="form-label" for="aiPolicyStatement">Your AI usage policy statement <span style="font-weight:400;color:var(--text-muted)">(optional — paste or summarize here)</span></label>
+          <textarea class="form-textarea" id="aiPolicyStatement" style="min-height:80px;"
+            placeholder="e.g. 'AI tools are not permitted on this assignment' or 'You may use AI to brainstorm, but all submitted writing must be your own…'"></textarea>
+        </div>
+        <div class="bp-callout" style="margin-top:.5rem;">
+          <span class="bp-callout-eyebrow">Why This Matters</span>
+          <p>Without a clear AI policy, students make their own assumptions — and those assumptions vary widely. A statement in the assignment prompt (not just the syllabus) ensures every student sees the expectation before they begin work. If you haven't defined a role for AI in this assignment yet, the <strong>Assessment Design Tool</strong> can help you think through the Four Roles framework.</p>
+          <a href="../Assessment Design Tool/index.html" class="bp-link" target="_blank">→ Open the Assessment Design Tool</a>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step1')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep2()">Next: What Does Success Look Like? →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 3 — WHAT DOES SUCCESS LOOK LIKE? ══ -->
+    <div class="page" id="page-step3">
+      <span class="page-eyebrow">Step 03</span>
+      <h1 class="page-title">What Does Success Look Like?</h1>
+      <p class="page-intro">Before naming any criteria, let's start with your mental image of excellent work. This is the most important thinking you'll do in this process — and it often surfaces criteria you wouldn't have named if you started with a blank rubric grid.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Visualize the Best Work</span>
+        <p class="step-body">Think of the strongest submission you have ever received for this kind of assignment — or imagine one. Don't think about what you asked students to do. Think about what the work actually <em>did</em> that made it excellent.</p>
+        <div class="form-group">
+          <label class="form-label" for="successVision">What made it excellent? What did it do that weaker work didn't?</label>
+          <p class="form-hint">Write freely — don't filter. Specific observations are more useful than general ones. ("The argument was constructed so that each paragraph built on the last" is more useful than "it was well-organized.")</p>
+          <textarea class="form-textarea" id="successVision" style="min-height:130px;"
+            placeholder="The best work I've seen on this assignment…"></textarea>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">What Separates an A from a B?</span>
+        <p class="step-body">This is often where the most important criteria live — in the gap between good work and excellent work. Many faculty find this harder to articulate than they expect, which is exactly why it's worth doing before you write descriptors.</p>
+        <div class="form-group">
+          <label class="form-label" for="aToBGap">What specifically separates A-level work from B-level work on this assignment?</label>
+          <p class="form-hint">Try to be behavioral and specific: what does the A student <em>do</em> that the B student doesn't?</p>
+          <textarea class="form-textarea" id="aToBGap" style="min-height:110px;"
+            placeholder="The difference between an A and a B on this assignment is…"></textarea>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step2')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep3()">Next: What Goes Wrong? →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 4 — WHAT GOES WRONG? ══ -->
+    <div class="page" id="page-step4">
+      <span class="page-eyebrow">Step 04</span>
+      <h1 class="page-title">What Goes Wrong?</h1>
+      <p class="page-intro">The criteria faculty care about most are often the ones they never made explicit — until they're frustrated reading the same mistake for the fifteenth time. Let's surface those now.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Common Failure Modes</span>
+        <p class="step-body">Think about the last time you graded this assignment (or one like it). What were the most common problems? What made you write the same comment over and over?</p>
+        <div class="form-group">
+          <label class="form-label" for="commonMistakes">What do students most commonly get wrong on this assignment?</label>
+          <p class="form-hint">List as many as come to mind — you can separate them with commas or line breaks.</p>
+          <textarea class="form-textarea" id="commonMistakes" style="min-height:110px;"
+            placeholder="Students frequently…"></textarea>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">What Frustrates You Most?</span>
+        <p class="step-body">Sometimes the most important criteria are the implicit ones — the things you assumed students knew without being told. If something consistently frustrates you when grading, it probably belongs in your rubric.</p>
+        <div class="form-group">
+          <label class="form-label" for="gradingFrustrations">What frustrates you most when grading this type of assignment?</label>
+          <textarea class="form-textarea" id="gradingFrustrations" style="min-height:110px;"
+            placeholder="When grading, I'm most frustrated by…"></textarea>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step3')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep4()">Next: Build Your Criteria →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 5 — CRITERIA ══ -->
+    <div class="page" id="page-step5">
+      <span class="page-eyebrow">Step 05</span>
+      <h1 class="page-title">Your Criteria</h1>
+      <p class="page-intro">Based on what you described, here are suggested criteria for your rubric. Each criterion should represent a distinct, assessable dimension of the assignment. Edit, remove, or add your own.</p>
+
+      <div id="criteriaCallout" class="bp-callout" style="margin-bottom:1.25rem;"></div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Suggested Criteria</span>
+        <p class="step-body">These suggestions are based on your assignment type and what you described in the previous steps. Accept the ones that fit, edit the names to match your language, and add any that are missing.</p>
+        <div class="criteria-list" id="criteriaList"></div>
+        <button class="add-criterion-btn" onclick="addCustomCriterion()">+ Add a Criterion</button>
+        <p class="criteria-count-nudge" id="criteriaCountNudge"></p>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step4')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep5()">Next: Scoring Approach →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 6 — SCORING APPROACH ══ -->
+    <div class="page" id="page-step6">
+      <span class="page-eyebrow">Step 06</span>
+      <h1 class="page-title">Scoring Approach</h1>
+      <p class="page-intro">How will you turn your rubric into a grade? Choose the approach that fits your course. You can always use the rubric descriptively for feedback without attaching numbers — but if you need a gradebook score, this is where you set it up.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Choose Your Scoring Method</span>
+        <div class="type-grid" id="scoringMethodGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div id="weightingSetup" style="display:none;">
+        <div class="activity-card">
+          <span class="step-eyebrow">Assign Criterion Weights</span>
+          <p class="step-body">Assign a percentage weight to each criterion. Weights must total 100%. Criteria that matter most to your learning goals should carry the most weight.</p>
+          <div id="weightsList"></div>
+          <div class="weights-total-row">
+            <span>Total</span>
+            <span id="weightsTotal" class="weights-total-num">0%</span>
+          </div>
+          <p class="weights-hint" id="weightsTotalHint"></p>
+        </div>
+      </div>
+
+      <div id="pointsSetup" style="display:none;">
+        <div class="activity-card">
+          <span class="step-eyebrow">Points per Level</span>
+          <p class="step-body">Set the point value for each performance level. These will be used to calculate scores. You can adjust after choosing your level names in the next step.</p>
+          <p class="step-body" style="font-style:italic;opacity:.7;">Point values will be finalized after you choose your performance levels in Step 07.</p>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step5')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep6()">Next: Performance Levels →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 7 — PERFORMANCE LEVELS ══ -->
+    <div class="page" id="page-step7">
+      <span class="page-eyebrow">Step 07</span>
+      <h1 class="page-title">Performance Levels</h1>
+      <p class="page-intro">Choose how many performance levels your rubric will have and what you'll call them. This decision matters more than it might seem — and research has a clear recommendation.</p>
+
+      <div class="bp-callout" style="margin-bottom:1.25rem;">
+        <span class="bp-callout-eyebrow">Why 4–5 Levels? The Research Says…</span>
+        <p>Rubrics with 4 or 5 performance levels consistently outperform 3-level rubrics in research. Here's why it matters:</p>
+        <ul>
+          <li><strong>Better inter-rater reliability</strong> — raters can meaningfully distinguish between 4 levels. With only 3, the middle category becomes a catch-all that different graders interpret very differently.</li>
+          <li><strong>More actionable feedback</strong> — students receiving a "Developing" rather than just "Needs Improvement" know there's a middle path, which research shows increases motivation to revise (Andrade &amp; Brookhart, 2026).</li>
+          <li><strong>Fewer grade disputes</strong> — specificity reduces ambiguity, and ambiguity is what drives disputes. When students can see exactly where they landed and why, conversations shift from "why did I get this grade" to "how do I improve."</li>
+          <li><strong>Faster grading</strong> — matching work to a descriptor takes less time than writing individualized comments from scratch. More levels means more precise matching, not more work.</li>
+          <li><strong>Supports self-assessment</strong> — students using rubrics to self-assess perform significantly better when levels are distinct enough to be self-applicable (Andrade, 2019).</li>
+        </ul>
+        <p style="margin-top:.5rem;font-style:italic;font-size:.75rem;">Note: Brookhart (2018) recommends against odd-numbered 3-level scales specifically because the middle category is systematically over-selected, reducing discrimination between student performances.</p>
+        <a href="https://www.ascd.org/el/articles/using-rubrics-to-promote-thinking-and-learning" class="bp-link" target="_blank">→ Andrade: Using Rubrics to Promote Thinking and Learning (ASCD)</a>
+      </div>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Choose a Scale</span>
+        <div class="level-scheme-grid" id="levelSchemeGrid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="activity-card" id="levelNamesCard">
+        <span class="step-eyebrow">Customize Level Names</span>
+        <p class="step-body">Edit the level names to match your course language if needed.</p>
+        <div class="level-names-wrap" id="levelNamesWrap">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step6')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep7()">Next: Write Descriptors →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 8 — DESCRIPTORS ══ -->
+    <div class="page" id="page-step8">
+      <span class="page-eyebrow">Step 08</span>
+      <h1 class="page-title">Write Your Descriptors</h1>
+      <p class="page-intro">Now we fill in the rubric grid. Start with the top and bottom levels for each criterion — these are the anchors. The middle levels will be scaffolded from your anchors.</p>
+
+      <div class="bp-callout" style="margin-bottom:1.25rem;">
+        <span class="bp-callout-eyebrow">Writing Effective Descriptors</span>
+        <p>The most common rubric problem is vague descriptor language. Words like "excellent," "good," or "adequate" tell students almost nothing. Strong descriptors are <strong>behavioral</strong> — they describe what the student <em>does</em>, not how good it is.</p>
+        <ul>
+          <li><strong>Instead of:</strong> "Uses sources effectively" → <strong>Write:</strong> "Cites at least 3 peer-reviewed sources and integrates each one into the argument rather than dropping quotes without analysis"</li>
+          <li><strong>Instead of:</strong> "Shows understanding of the topic" → <strong>Write:</strong> "Accurately applies course concepts to the case and explains why each concept is relevant"</li>
+        </ul>
+        <p style="margin-top:.4rem;">Tip: Start with the top level — your vision of excellent work from Step 03. Then write the bottom level. The middle levels almost write themselves once the anchors are clear.</p>
+        <a href="https://www.aacu.org/value/rubrics" class="bp-link" target="_blank">→ AAC&U VALUE Rubrics — models of strong descriptors across disciplines</a>
+      </div>
+
+      <div id="draftExcerptCount" class="draft-excerpt-counter"></div>
+
+      <div class="activity-card">
+        <div class="rubric-grid-wrap">
+          <table class="rubric-grid" id="rubricGrid">
+            <!-- Populated by JS -->
+          </table>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step7')">← Back</button>
+        <button class="nav-btn nav-btn-primary" onclick="completeStep8()">Next: Preview &amp; Export →</button>
+      </div>
+    </div>
+
+    <!-- ══ PAGE: STEP 9 — PREVIEW & EXPORT ══ -->
+    <div class="page" id="page-step9">
+      <span class="page-eyebrow">Step 09</span>
+      <h1 class="page-title">Preview &amp; Export</h1>
+      <p class="page-intro">Your rubric is ready. Review it below, copy it to your clipboard, or print it to PDF. Remember — the most effective practice is to share the rubric with students <em>before</em> they begin the assignment.</p>
+
+      <div class="activity-card">
+        <span class="step-eyebrow">Your Rubric</span>
+        <div id="previewDraftWarn" class="preview-draft-warn" style="display:none;"></div>
+        <div style="display:flex;gap:.6rem;margin-bottom:1rem;flex-wrap:wrap;">
+          <button class="nav-btn nav-btn-primary" onclick="copyRubricHTML()">Copy as Table</button>
+          <button class="nav-btn nav-btn-outline" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+        <div class="rubric-preview-wrap">
+          <table class="rubric-preview" id="rubricPreview">
+            <!-- Populated by JS -->
+          </table>
+        </div>
+      </div>
+
+      <div class="resources-panel">
+        <h3>Go Deeper — Rubric Design Resources</h3>
+        <div class="resource-list">
+          <div class="resource-item">
+            <div class="resource-icon">📖</div>
+            <div class="resource-body">
+              <div class="resource-title">Brookhart, S.M. — How to Create and Use Rubrics for Formative Assessment and Grading</div>
+              <div class="resource-desc">The gold-standard reference on rubric design. Covers criteria development, descriptor language, performance levels, and using rubrics formatively. ASCD, 2018.</div>
+              <a href="https://www.ascd.org/books/how-to-create-and-use-rubrics-for-formative-assessment-and-grading" class="resource-link" target="_blank">→ ASCD (publisher)</a>
+            </div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-icon">📄</div>
+            <div class="resource-body">
+              <div class="resource-title">Andrade — Using Rubrics to Promote Thinking and Learning</div>
+              <div class="resource-desc">Free article from Educational Leadership summarizing the research on how rubric-referenced self-assessment improves student performance and metacognition.</div>
+              <a href="https://www.ascd.org/el/articles/using-rubrics-to-promote-thinking-and-learning" class="resource-link" target="_blank">→ Read free at ASCD</a>
+            </div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-icon">🗂</div>
+            <div class="resource-body">
+              <div class="resource-title">AAC&U VALUE Rubrics</div>
+              <div class="resource-desc">16 cross-cutting rubrics covering critical thinking, written communication, ethical reasoning, teamwork, and more — freely available to adapt for any course.</div>
+              <a href="https://www.aacu.org/value/rubrics" class="resource-link" target="_blank">→ Browse VALUE Rubrics</a>
+            </div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-icon">🎓</div>
+            <div class="resource-body">
+              <div class="resource-title">Harvard Bok Center — Rubrics Guide</div>
+              <div class="resource-desc">Concise best-practice guidance from Harvard's teaching center, including advice on analytic vs. holistic rubrics and common pitfalls.</div>
+              <a href="https://bokcenter.harvard.edu/rubrics" class="resource-link" target="_blank">→ Harvard Bok Center</a>
+            </div>
+          </div>
+          <div class="resource-item">
+            <div class="resource-icon">💬</div>
+            <div class="resource-body">
+              <div class="resource-title">Book a CFE Consultation</div>
+              <div class="resource-desc">Want a thought partner to review your rubric or discuss how to use it formatively with students? The Center for Faculty Excellence offers free 1:1 consultations for AU faculty.</div>
+              <a href="https://american.co1.qualtrics.com/jfe/form/SV_8eQarRlDco6LYlo" class="resource-link" target="_blank">→ Schedule a Consultation</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="closing-card">
+        <h2>Your rubric is ready.</h2>
+        <p>Share it with students before they begin the assignment — research consistently shows that rubric transparency improves both performance and student confidence. If you want to refine it further or discuss how to use it formatively in class, the CFE is here to help.</p>
+        <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap;">
+          <a href="https://american.co1.qualtrics.com/jfe/form/SV_8eQarRlDco6LYlo" class="nav-btn nav-btn-primary" target="_blank">Book a CFE Consultation</a>
+          <button class="nav-btn nav-btn-outline" onclick="startTool()">Build Another Rubric</button>
+        </div>
+      </div>
+
+      <div class="activity-nav">
+        <button class="nav-btn nav-btn-outline" onclick="showPage('step8')">← Back</button>
+        <div></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ══ TOAST ══ -->
+<div class="toast" id="toast"></div>
+
+<!-- ══ HIDDEN FILE INPUT FOR LOAD ══ -->
+<input type="file" id="loadFileInput" accept=".json" style="display:none" onchange="loadProgress(event)">
+
+<script src="rubric-app.js"></script>
+</body>
+</html>
